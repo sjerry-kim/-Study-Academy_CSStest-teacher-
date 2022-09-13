@@ -1,0 +1,73 @@
+body, h1{
+    margin: 0;
+}
+
+.header{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.nav ul li:hover{
+    transition: all 1s; /*연결되고 있는 모든 것들이 transition*/
+    color: white;
+    cursor: pointer;
+}
+
+.main{
+    margin: 10px;
+}
+
+.section1, .section2, .section3{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.section1{
+    float: left;
+}
+
+.section2, .section3{
+    margin-left: 380px;
+}
+
+.section2 h2{
+    border-bottom: 1px dashed black;
+}
+
+.section3 p::after{
+    content: "N";
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+footer{
+    background-color: lightslategray;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width:576px){
+    .section1{
+        width: inherit;
+    }
+
+    .section2, .section3{
+        clear: both;
+        margin: 0;
+    }
+}
